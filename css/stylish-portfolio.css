@@ -6,6 +6,11 @@
 
 /* Global Styles */
 
+@font-face {
+  font-family: Kano;
+  src: url('../fonts/Kano.otf');
+}
+
 html,
 body {
     width: 100%;
@@ -13,13 +18,18 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Kano ,sans-serif;
 }
 
 .text-vertical-center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+}
+
+.top-header {
+  padding-left: 50px;
+  text-align: left;
 }
 
 .text-vertical-center h1 {
@@ -127,11 +137,16 @@ hr.small {
     background: none;
 }
 
+.fa.fa-bars {
+  color: black;
+}
+
 #menu-toggle {
     z-index: 1;
     position: fixed;
     top: 0;
     right: 0;
+    background-color: transparent;
 }
 
 #sidebar-wrapper.active {
@@ -148,6 +163,11 @@ hr.small {
     margin: 5px 5px 0 0;
 }
 
+#menu-close {
+  background-color: transparent;
+  color: #999;
+}
+
 /* Header */
 
 .header {
@@ -155,7 +175,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
+    background: url(../img/ada.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -178,6 +198,14 @@ hr.small {
     margin-bottom: 30px;
 }
 
+.bg-primary {
+  color: #334444;
+  background-color: #abccb7;
+}
+
+.fa-stack-1x {
+  color: #fff;
+}
 /* Callout */
 
 .callout {
@@ -247,4 +275,12 @@ footer {
   position: fixed;
   bottom: 5px;
   right: 5px;
+}
+
+a {
+  color: #678a74;
+}
+
+a:hover {
+  color: #334444;
 }
