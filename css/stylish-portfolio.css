@@ -7,8 +7,8 @@
 /* Global Styles */
 
 @font-face {
-  font-family: Kano;
-  src: url('../fonts/Kano.otf');
+  font-family: 'Open Sans', sans-serif;
+  /*src: url('../fonts/Kano.otf');*/
 }
 
 html,
@@ -18,7 +18,7 @@ body {
 }
 
 body {
-    font-family: Kano ,sans-serif;
+    font-family: 'Open Sans' ,sans-serif;
 }
 
 .text-vertical-center {
@@ -30,6 +30,12 @@ body {
 .top-header {
   padding-left: 50px;
   text-align: left;
+}
+
+@media (max-width: 991px) {
+  .top-header {
+    color: white;
+  }
 }
 
 .text-vertical-center h1 {
